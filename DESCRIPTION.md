@@ -9,10 +9,6 @@ _CooldownWatch aims to track your enemies cooldowns and making them visible to t
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/curseforge.svg)](https://www.curseforge.com/wow/addons/cooldownwatch)
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/wago.svg)](https://addons.wago.io/addons/cooldownwatch)
 
-## Source/Issues
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/issues.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch/issues)
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/source.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch)
-
 ## What is CooldownWatch?
 
 In PvP the fight is often decided by cooldowns - who still has their escape, their interrupt, their trinket. CooldownWatch watches the combat log for those spells and shows you when your target used one and when it comes back up, so you no longer have to keep that timer in your head.
