@@ -94,7 +94,31 @@ Enemies with the right talents or gear get their cooldowns back faster. Assume t
 
 ---
 
-## 4. Configuration Profiles
+## 4. Proximity Cooldown Window
+
+![](cooldownwatch_proximity_cooldown_window.png)
+
+```
+Not just your target: the proximity window lists the active cooldowns of every enemy around you - spell, caster and remaining time, newest on top. Your current target stays on the bar.
+```
+
+**File:** `cooldownwatch_proximity_cooldown_window.png`
+
+---
+
+## 5. Friendly Cooldowns
+
+![](cooldownwatch_friendly_cooldowns.png)
+
+```
+Watch your own side too: opt-in tracking shows teammate cooldowns on the target bar and in a friendly proximity window, scoped to your party, raid or everyone tracked.
+```
+
+**File:** `cooldownwatch_friendly_cooldowns.png`
+
+---
+
+## 6. Configuration Profiles
 
 ![](cooldownwatch_profile_configuration.png)
 
