@@ -21,6 +21,8 @@ Everything is derived from the combat log, so there is nothing to configure befo
 
 * **Tracks enemy cooldowns from the combat log** - no addon required on the other side.
 * **Per-target cooldown bar** that follows your current target and can be placed anywhere on screen.
+* **Proximity cooldown window** listing the active cooldowns of every enemy around you - not just your target.
+* **Friendly cooldown tracking** (opt-in) that shows teammate cooldowns on the target bar and in a window of their own, scoped to your party or raid.
 * **A curated spell catalog** covering all nine classes plus racials, items and miscellaneous cooldowns - every entry verified against Wowhead, including all ranks of a spell.
 * **Worst case handling** for enemies with talents or gear that shorten a cooldown, globally or per spell.
 * **Manual cooldown overrides** per spell when you want the exact number yourself.
@@ -39,15 +41,17 @@ CooldownWatch can be configured through the in-game interface options. Access th
 &nbsp;  
 Alternatively, you can use the slash command: `/cooldownwatch opt` or `/rgcw opt`
 
-### Placing the Targetcooldownbar
+### Positioning the bar and windows
 
-Type `/rgcw conf enable` to bring an example Targetcooldownbar on screen and drag it wherever you like - as long as **Lock Targetcooldownbar** is disabled. `/rgcw conf disable` hides it again. Enable **Lock Targetcooldownbar** once you are happy with the position so it can no longer be moved by accident.
+Every surface is positioned through its own button in the options: **Position Bar** on the Options panel for the Targetcooldownbar, **Position Window** on the Proximity Cooldowns and Friendly Cooldowns panels for the two windows. The button fills the surface with example cooldowns and makes it draggable - drag it where you want it and click **Apply**. Outside this mode nothing can be moved by accident, so there is no lock to manage. The Targetcooldownbar's size is adjusted with the **Bar scale** slider on the same Options panel.
+
+For the Targetcooldownbar, `/rgcw conf enable` brings up the same example preview directly and `/rgcw conf disable` hides it again.
 
 ### Choosing what to track
 
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_cooldown_selection.png)
 &nbsp;  
-Tracked cooldowns are grouped into categories - one per class (Priest, Rogue, Mage, Hunter, Warlock, Paladin, Druid, Shaman, Warrior) plus **Racials**, **Items** and **Misc**. Every spell can be enabled or disabled on its own, so you can narrow tracking down to the handful of cooldowns that actually matter to you.
+Tracked cooldowns are grouped into categories - one per class (Priest, Rogue, Mage, Hunter, Warlock, Paladin, Druid, Shaman, Warrior) plus **Racials**, **Items** and **Misc**. Every spell can be enabled or disabled on its own, so you can narrow tracking down to the handful of cooldowns that actually matter to you. Each category panel carries an **Enemy** and a **Friendly** tab - the same spell list, configured separately per side, so what you track on enemies is independent of what you track on teammates.
 
 Each spell also carries two per-spell settings:
 
@@ -58,13 +62,32 @@ Each spell also carries two per-spell settings:
 
 **Assume worst case for all cooldowns** applies the worst case to everything at once. Worst case settings on individual cooldowns still take precedence.
 
+### Proximity Cooldowns
+
+The Targetcooldownbar only ever shows your current target. The **Proximity Cooldown Window** lists the active cooldowns of every other enemy around you - one row per cooldown with the spell, the caster's name and the remaining time, newest on top. Your current target is excluded, since its cooldowns are already on the bar.
+&nbsp;  
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_proximity_cooldown_window.png)
+&nbsp;  
+The window is opt-in and configured on the **Proximity Cooldowns** panel: **Hide long cooldowns** keeps cooldowns above 60 seconds out of the window (enabled by default - long cooldowns rarely decide the next engagement), the **Window scale** and **Maximum displayed cooldowns** sliders control its size, and **Reset to Defaults** restores every setting including the window position.
+
+### Friendly Cooldowns
+
+CooldownWatch can watch your own side too. **Track Friendly Cooldowns** tracks friendly players and their pets the same way enemies are tracked - your own cooldowns are excluded. Two displays build on it, each with its own toggle:
+&nbsp;  
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_friendly_cooldowns.png)
+&nbsp;  
+- **Show Friendly Target Cooldowns** shows a targeted teammate's tracked cooldowns on the Targetcooldownbar.
+- **Enable Friendly Proximity Cooldown Window** opens a second proximity window for friendly cooldowns, with a **Scope** filter (your group, your raid, or all tracked players) and the same hide-long, scale and size options as the enemy window.
+
+Which spells are tracked per side is chosen on the **Friendly** tab of each category panel.
+
 ### Profiles
 
 CooldownWatch lets you save your configuration as named profiles, so you can switch between different setups or carry your settings to another character. Profiles are managed under the **Profiles** tab of the configuration interface.
 &nbsp;  
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_profile_configuration.png)
 &nbsp;  
-A profile captures all of your CooldownWatch settings - which cooldowns are tracked per category, the per-spell worst case and cooldown override values, the *Assume worst case for all cooldowns* default, the lock state of the Targetcooldownbar and its on-screen position.
+A profile captures all of your CooldownWatch settings - which cooldowns are tracked per category and side, the per-spell worst case and cooldown override values, the *Assume worst case for all cooldowns* default, the friendly tracking flags, the proximity window options, and the scale and on-screen position of every surface.
 
 - **Save current as...**: Snapshots your current settings into a new named profile (or overwrites an existing one of the same name).
 - **Apply**: Loads the selected profile and applies its settings. This overwrites your current settings and reloads the UI.
