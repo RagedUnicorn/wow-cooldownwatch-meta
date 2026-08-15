@@ -16,7 +16,9 @@ _CooldownWatch aims to track your enemies cooldowns and making them visible to t
 ## What is CooldownWatch?
 
 In PvP the fight is often decided by cooldowns — who still has their escape, their interrupt, their trinket. CooldownWatch watches the combat log for those spells and shows you when your target used one and when it comes back up, so you no longer have to keep that timer in your head.
-
+&nbsp;  
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_target_cooldown_bar.png)
+&nbsp;  
 Everything is derived from the combat log, so there is nothing to configure before it works: CooldownWatch recognizes the spell, resolves the caster (including pets back to their owner), and starts counting down the cooldown on the Targetcooldownbar of that player. Switch targets and the bar follows, showing what that enemy has burned and what is still available to them.
 
 ## Features of CooldownWatch
@@ -29,10 +31,6 @@ Everything is derived from the combat log, so there is nothing to configure befo
 * **Pet cooldowns resolved back to their owner**, so a pet ability counts against the player who owns it.
 * **Season aware** — Season of Discovery and TBC spells are applied on top of the base catalog for the branch you are playing.
 * **Configuration profiles** with export/import for moving a setup between characters or sharing it.
-
-### Cooldowns vs Proximity Cooldowns
-
-Proximity cooldowns are cooldowns that were detected within a certain proximity but could not be matched to a caster. This means that we know that a certain spell was cast but we don't know by what player. It can however still be very helpful to see a notification about those spells. If the spell is specific to a class the player can often guess himself who cast the spell. Only if there are multiple enemy players with the same class it might get tricky to guess which one of them just used his cooldown.
 
 ## Configuration
 
@@ -51,10 +49,14 @@ Type `/rgcw conf enable` to bring an example Targetcooldownbar on screen and dra
 
 ### Choosing what to track
 
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_cooldown_selection.png)
+&nbsp;  
 Tracked cooldowns are grouped into categories — one per class (Priest, Rogue, Mage, Hunter, Warlock, Paladin, Druid, Shaman, Warrior) plus **Racials**, **Items** and **Misc**. Every spell can be enabled or disabled on its own, so you can narrow tracking down to the handful of cooldowns that actually matter to you.
 
 Each spell also carries two per-spell settings:
 
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_worst_case_override.png)
+&nbsp;  
 - **Use worst case**: assume the enemy has the talents or gear that shorten this cooldown. The bar then counts down the shortest realistic cooldown instead of the base value.
 - **Cooldown override**: manually set the tracked cooldown in seconds. It takes precedence over all worst case settings, and can only lower the tracked time — values above the base cooldown are capped.
 
@@ -63,7 +65,9 @@ Each spell also carries two per-spell settings:
 ### Profiles
 
 CooldownWatch lets you save your configuration as named profiles, so you can switch between different setups or carry your settings to another character. Profiles are managed under the **Profiles** tab of the configuration interface.
-
+&nbsp;  
+![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_profile_configuration.png)
+&nbsp;  
 A profile captures all of your CooldownWatch settings – which cooldowns are tracked per category, the per-spell worst case and cooldown override values, the *Assume worst case for all cooldowns* default, the lock state of the Targetcooldownbar and its on-screen position.
 
 - **Save current as...**: Snapshots your current settings into a new named profile (or overwrites an existing one of the same name).

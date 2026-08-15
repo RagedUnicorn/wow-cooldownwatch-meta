@@ -58,17 +58,48 @@ Upload it by hand in the gallery section of each dashboard.
 
 ---
 
-## Not captured yet
+## 1. Target Cooldown Bar
 
-CooldownWatch is unreleased and has no in-game captures, so this folder holds no images yet
-and there is no `wow-media-capture` manifest for the addon under the skill's
-`reference/media/`. The strip is expected to cover, in this order:
+![](cooldownwatch_target_cooldown_bar.png)
 
-1. **Target Cooldown Bar** - the bar tracking a target's cooldowns during a fight.
-2. **Cooldown Selection** - the per-category spell list with cooldowns enabled and disabled.
-3. **Worst Case & Overrides** - the per-spell worst case toggle and cooldown override field.
-4. **Configuration Profiles** - the Profiles tab with export/import.
+```
+Everything your current target has burned, and how long until it is back. CooldownWatch reads the combat log, so nothing is required on the enemy's side - switch targets and the bar follows.
+```
 
-Once the captures exist, replace this section with one `## <n>. <Title>` block per image -
-the embedded `![](<file>.png)`, the caption in a fenced block, and a `**File:**` line -
-matching `wow-pulse-meta/assets/gallery/README.md`.
+**File:** `cooldownwatch_target_cooldown_bar.png`
+
+---
+
+## 2. Cooldown Selection
+
+![](cooldownwatch_cooldown_selection.png)
+
+```
+Pick exactly which enemy cooldowns you want to see. Every spell toggles on its own, grouped into one category per class plus racials, items and consumables.
+```
+
+**File:** `cooldownwatch_cooldown_selection.png`
+
+---
+
+## 3. Worst Case & Overrides
+
+![](cooldownwatch_worst_case_override.png)
+
+```
+Enemies with the right talents or gear get their cooldowns back faster. Assume the worst case per spell or globally, or type the exact number yourself.
+```
+
+**File:** `cooldownwatch_worst_case_override.png`
+
+---
+
+## 4. Configuration Profiles
+
+![](cooldownwatch_profile_configuration.png)
+
+```
+Save your setup as named profiles and switch between them, or hand one to another character - or another player - as an export string. The Default profile is always there to reset to.
+```
+
+**File:** `cooldownwatch_profile_configuration.png`
