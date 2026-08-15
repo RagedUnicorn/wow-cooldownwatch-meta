@@ -15,7 +15,7 @@ _CooldownWatch aims to track your enemies cooldowns and making them visible to t
 
 ## What is CooldownWatch?
 
-In PvP the fight is often decided by cooldowns — who still has their escape, their interrupt, their trinket. CooldownWatch watches the combat log for those spells and shows you when your target used one and when it comes back up, so you no longer have to keep that timer in your head.
+In PvP the fight is often decided by cooldowns - who still has their escape, their interrupt, their trinket. CooldownWatch watches the combat log for those spells and shows you when your target used one and when it comes back up, so you no longer have to keep that timer in your head.
 &nbsp;  
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_target_cooldown_bar.png)
 &nbsp;  
@@ -23,13 +23,13 @@ Everything is derived from the combat log, so there is nothing to configure befo
 
 ## Features of CooldownWatch
 
-* **Tracks enemy cooldowns from the combat log** — no addon required on the other side.
+* **Tracks enemy cooldowns from the combat log** - no addon required on the other side.
 * **Per-target cooldown bar** that follows your current target and can be placed anywhere on screen.
-* **A curated spell catalog** covering all nine classes plus racials, items and miscellaneous cooldowns — every entry verified against Wowhead, including all ranks of a spell.
+* **A curated spell catalog** covering all nine classes plus racials, items and miscellaneous cooldowns - every entry verified against Wowhead, including all ranks of a spell.
 * **Worst case handling** for enemies with talents or gear that shorten a cooldown, globally or per spell.
 * **Manual cooldown overrides** per spell when you want the exact number yourself.
 * **Pet cooldowns resolved back to their owner**, so a pet ability counts against the player who owns it.
-* **Season aware** — Season of Discovery and TBC spells are applied on top of the base catalog for the branch you are playing.
+* **Season aware** - Season of Discovery and TBC spells are applied on top of the base catalog for the branch you are playing.
 * **Configuration profiles** with export/import for moving a setup between characters or sharing it.
 
 ## Configuration
@@ -45,20 +45,20 @@ Alternatively, you can use the slash command: `/cooldownwatch opt` or `/rgcw opt
 
 ### Placing the Targetcooldownbar
 
-Type `/rgcw conf enable` to bring an example Targetcooldownbar on screen and drag it wherever you like — as long as **Lock Targetcooldownbar** is disabled. `/rgcw conf disable` hides it again. Enable **Lock Targetcooldownbar** once you are happy with the position so it can no longer be moved by accident.
+Type `/rgcw conf enable` to bring an example Targetcooldownbar on screen and drag it wherever you like - as long as **Lock Targetcooldownbar** is disabled. `/rgcw conf disable` hides it again. Enable **Lock Targetcooldownbar** once you are happy with the position so it can no longer be moved by accident.
 
 ### Choosing what to track
 
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_cooldown_selection.png)
 &nbsp;  
-Tracked cooldowns are grouped into categories — one per class (Priest, Rogue, Mage, Hunter, Warlock, Paladin, Druid, Shaman, Warrior) plus **Racials**, **Items** and **Misc**. Every spell can be enabled or disabled on its own, so you can narrow tracking down to the handful of cooldowns that actually matter to you.
+Tracked cooldowns are grouped into categories - one per class (Priest, Rogue, Mage, Hunter, Warlock, Paladin, Druid, Shaman, Warrior) plus **Racials**, **Items** and **Misc**. Every spell can be enabled or disabled on its own, so you can narrow tracking down to the handful of cooldowns that actually matter to you.
 
 Each spell also carries two per-spell settings:
 
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_worst_case_override.png)
 &nbsp;  
 - **Use worst case**: assume the enemy has the talents or gear that shorten this cooldown. The bar then counts down the shortest realistic cooldown instead of the base value.
-- **Cooldown override**: manually set the tracked cooldown in seconds. It takes precedence over all worst case settings, and can only lower the tracked time — values above the base cooldown are capped.
+- **Cooldown override**: manually set the tracked cooldown in seconds. It takes precedence over all worst case settings, and can only lower the tracked time - values above the base cooldown are capped.
 
 **Assume worst case for all cooldowns** applies the worst case to everything at once. Worst case settings on individual cooldowns still take precedence.
 
@@ -68,7 +68,7 @@ CooldownWatch lets you save your configuration as named profiles, so you can swi
 &nbsp;  
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/cooldownwatch_profile_configuration.png)
 &nbsp;  
-A profile captures all of your CooldownWatch settings – which cooldowns are tracked per category, the per-spell worst case and cooldown override values, the *Assume worst case for all cooldowns* default, the lock state of the Targetcooldownbar and its on-screen position.
+A profile captures all of your CooldownWatch settings - which cooldowns are tracked per category, the per-spell worst case and cooldown override values, the *Assume worst case for all cooldowns* default, the lock state of the Targetcooldownbar and its on-screen position.
 
 - **Save current as...**: Snapshots your current settings into a new named profile (or overwrites an existing one of the same name).
 - **Apply**: Loads the selected profile and applies its settings. This overwrites your current settings and reloads the UI.
@@ -77,7 +77,7 @@ A profile captures all of your CooldownWatch settings – which cooldowns are tr
 
 #### The Default Profile
 
-Every character starts with a profile named **Default**. It holds CooldownWatch's shipped settings and is created automatically – you never have to save it yourself. It cannot be deleted, renamed or overwritten, so there is always a clean baseline to go back to: select **Default** and click **Apply** to reset CooldownWatch to its factory settings. The Rename and Delete buttons are greyed out while it is selected.
+Every character starts with a profile named **Default**. It holds CooldownWatch's shipped settings and is created automatically - you never have to save it yourself. It cannot be deleted, renamed or overwritten, so there is always a clean baseline to go back to: select **Default** and click **Apply** to reset CooldownWatch to its factory settings. The Rename and Delete buttons are greyed out while it is selected.
 
 #### Sharing Profiles (Export / Import)
 
@@ -92,7 +92,7 @@ Profiles can be shared as portable strings, making it easy to copy a setup betwe
 
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/issues.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch/issues)
 
-Wrong or missing spell data is the most common report and the most valuable one — the issue tracker has a dedicated **Spell Data Report** template for it.
+Wrong or missing spell data is the most common report and the most valuable one - the issue tracker has a dedicated **Spell Data Report** template for it.
 
 ## Source
 
@@ -102,7 +102,7 @@ Wrong or missing spell data is the most common report and the most valuable one 
 
 #### A cooldown counts down with the wrong duration. What now?
 
-CooldownWatch ships the base cooldown of every spell it knows. If the enemy has a talent or item that shortens it, enable **Use worst case** for that spell (or **Assume worst case for all cooldowns** globally). If the number is still wrong, it is a data issue — open a GitHub Issue with the **Spell Data Report** template and it will be corrected in the spell catalog.
+CooldownWatch ships the base cooldown of every spell it knows. If the enemy has a talent or item that shortens it, enable **Use worst case** for that spell (or **Assume worst case for all cooldowns** globally). If the number is still wrong, it is a data issue - open a GitHub Issue with the **Spell Data Report** template and it will be corrected in the spell catalog.
 
 #### I get a red error (Lua Error) on my screen. What is this?
 

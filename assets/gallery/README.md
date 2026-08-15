@@ -32,7 +32,7 @@ filenames - magick parses a leading `C:` as the raw cyan-channel coder and dies 
 Black bars blend into the dark WoW scenes, and 16:9 keeps wide captures from rendering as
 thin strips. Sizes stay under **2 MB** to clear CurseForge's 2 MB cap (wago allows up to
 3072 KB). Drop the box to `1440x810` for noisy full-scene shots that creep over 2 MB at
-1600×900.
+1600x900.
 
 **Shrink-only matters.** Plain `-resize` *enlarges* a crop smaller than the box to fill it,
 where the old ffmpeg `decrease` recipe only ever shrank - an in-world crop smaller than the
