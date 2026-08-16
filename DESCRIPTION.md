@@ -2,7 +2,7 @@
 &nbsp;  
 ![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/ragedunicorn_wow_banner.png)
 &nbsp;  
-_CooldownWatch aims to track your enemies cooldowns and making them visible to the player_
+_CooldownWatch aims to track the cooldowns of enemy and friendly players and make them visible at a glance_
 
 ## Providers
 
@@ -29,8 +29,9 @@ CooldownWatch supports World of Warcraft Classic Era and TBC Anniversary, includ
 * **Worst case handling** for enemies with talents or gear that shorten a cooldown, globally or per spell.
 * **Manual cooldown overrides** per spell when you want the exact number yourself.
 * **Pet cooldowns resolved back to their owner**, so a pet ability counts against the player who owns it.
-* **Season aware** - Season of Discovery and TBC spells are applied on top of the base catalog for the branch you are playing.
+* **Season aware** - Season of Discovery and TBC Anniversary are supported with the Classic catalog as the baseline; season-specific spell data is still being added.
 * **Configuration profiles** with export/import for moving a setup between characters or sharing it.
+* **Update notice** - a one-time chat message when a party, raid or guild member runs a newer version of CooldownWatch.
 
 ## Configuration
 
@@ -42,6 +43,13 @@ CooldownWatch can be configured through the in-game interface options. Access th
 4. Finding "CooldownWatch" in the list
 &nbsp;  
 Alternatively, you can use the slash command: `/cooldownwatch opt` or `/rgcw opt`
+
+The full `/rgcw` (or `/cooldownwatch`) command surface:
+
+- `/rgcw help` - print the available commands (plain `/rgcw` does the same)
+- `/rgcw opt` - open the options panel
+- `/rgcw conf enable|disable` - show or hide the example Targetcooldownbar (`configure` also works)
+- `/rgcw rl` - reload the UI (`reload` also works)
 
 ### Positioning the bar and windows
 
@@ -131,4 +139,4 @@ CooldownWatch ships the base cooldown of every spell it knows. If the enemy has 
 
 #### I get a red error (Lua Error) on my screen. What is this?
 
-This is what we call a Lua error, and it usually happens because of an oversight or error by the developer (in this case me). Take a screenshot off the error and create a GitHub Issue with it, and I will see if I can resolve it. It also helps if you can add any additional information of what you were doing at the time and what other addons you have active. Additionally, if you are able to reproduce the error make sure to check if it still happens if you disable all others addons.
+This is what we call a Lua error, and it usually happens because of an oversight or error by the developer (in this case me). Take a screenshot of the error and create a GitHub Issue with it, and I will see if I can resolve it. It also helps if you can add any additional information of what you were doing at the time and what other addons you have active. Additionally, if you are able to reproduce the error make sure to check if it still happens if you disable all other addons.
