@@ -17,6 +17,8 @@ In PvP the fight is often decided by cooldowns - who still has their escape, the
 &nbsp;  
 Everything is derived from the combat log, so there is nothing to configure before it works: CooldownWatch recognizes the spell, resolves the caster (including pets back to their owner), and starts counting down the cooldown on the Targetcooldownbar of that player. Switch targets and the bar follows, showing what that enemy has burned and what is still available to them.
 
+CooldownWatch supports World of Warcraft Classic Era and TBC Anniversary, including Hardcore and Season of Discovery.
+
 ## Features of CooldownWatch
 
 * **Tracks enemy cooldowns from the combat log** - no addon required on the other side.
@@ -118,6 +120,10 @@ Wrong or missing spell data is the most common report and the most valuable one 
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/source.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch)
 
 ## FAQ
+
+#### Does CooldownWatch work on TBC Anniversary?
+
+Yes - the addon loads and tracks with the Classic spell catalog as its baseline. Cooldowns that TBC reworked and spell ranks that are new in TBC are not covered yet; TBC-specific data is still being added. A cooldown you miss on TBC is exactly what the **Spell Data Report** issue template is for.
 
 #### A cooldown counts down with the wrong duration. What now?
 
