@@ -6,8 +6,8 @@ _CooldownWatch aims to track the cooldowns of enemy and friendly players and mak
 
 ## Providers
 
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/curseforge.svg)](https://www.curseforge.com/wow/addons/cooldownwatch)
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/wago.svg)](https://addons.wago.io/addons/cooldownwatch)
+[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/curseforge.svg)](https://www.curseforge.com/wow/addons/cooldownwatch-rg)
+[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/wago.svg)](https://addons.wago.io/addons/cooldownwatch-rg)
 
 ## What is CooldownWatch?
 

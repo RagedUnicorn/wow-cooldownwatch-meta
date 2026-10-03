@@ -1,8 +1,8 @@
 # Gallery Images
 
 Static overview images for the CooldownWatch pages on
-[wago.io](https://addons.wago.io/addons/cooldownwatch/gallery) and
-[CurseForge](https://www.curseforge.com/wow/addons/cooldownwatch). They give visitors a quick
+[wago.io](https://addons.wago.io/addons/cooldownwatch-rg/gallery) and
+[CurseForge](https://www.curseforge.com/wow/addons/cooldownwatch-rg). They give visitors a quick
 visual summary of CooldownWatch's target cooldown bar and configuration straight from the
 gallery/screenshot strip - the embedded screenshots and full context live in the
 project's `DESCRIPTION.md`. This rarely needs updating; this folder is the source of
