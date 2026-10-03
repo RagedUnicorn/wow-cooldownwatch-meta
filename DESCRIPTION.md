@@ -9,6 +9,12 @@ _CooldownWatch aims to track the cooldowns of enemy and friendly players and mak
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/curseforge.svg)](https://www.curseforge.com/wow/addons/cooldownwatch-rg)
 [![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/wago.svg)](https://addons.wago.io/addons/cooldownwatch-rg)
 
+## Source/Issues
+[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/issues.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch/issues)
+[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/source.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch)
+
+Wrong or missing spell data is the most common report and the most valuable one - the issue tracker has a dedicated **Spell Data Report** template for it.
+
 ## What is CooldownWatch?
 
 In PvP the fight is often decided by cooldowns - who still has their escape, their interrupt, their trinket. CooldownWatch watches the combat log for those spells and shows you when your target used one and when it comes back up, so you no longer have to keep that timer in your head.
@@ -116,16 +122,6 @@ Profiles can be shared as portable strings, making it easy to copy a setup betwe
 - **Import**: Paste a profile string into the field and import it as a new profile, stored without switching to it. Imported strings are validated, so an invalid, corrupted, or non-CooldownWatch string is rejected without changing any of your settings.
 
 > Note: Profiles are stored per character. Use export/import to move a profile to another character.
-
-## Issues
-
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/issues.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch/issues)
-
-Wrong or missing spell data is the most common report and the most valuable one - the issue tracker has a dedicated **Spell Data Report** template for it.
-
-## Source
-
-[![](https://raw.githubusercontent.com/RagedUnicorn/wow-cooldownwatch-meta/master/assets/source.svg)](https://github.com/RagedUnicorn/wow-classic-cooldownwatch)
 
 ## FAQ
 
