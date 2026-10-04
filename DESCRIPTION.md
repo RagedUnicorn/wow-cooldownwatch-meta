@@ -27,7 +27,7 @@ CooldownWatch supports World of Warcraft Classic Era and TBC Anniversary, includ
 
 ## Features of CooldownWatch
 
-* **Tracks enemy cooldowns from the combat log** - no addon required on the other side.
+* **Tracks enemy cooldowns from the combat log.**
 * **Per-target cooldown bar** that follows your current target and can be placed anywhere on screen.
 * **Proximity cooldown window** listing the active cooldowns of every enemy around you - not just your target.
 * **Friendly cooldown tracking** (opt-in) that shows teammate cooldowns on the target bar and in a window of their own, scoped to your party or raid.
@@ -35,7 +35,7 @@ CooldownWatch supports World of Warcraft Classic Era and TBC Anniversary, includ
 * **Worst case handling** for enemies with talents or gear that shorten a cooldown, globally or per spell.
 * **Manual cooldown overrides** per spell when you want the exact number yourself.
 * **Pet cooldowns resolved back to their owner**, so a pet ability counts against the player who owns it.
-* **Season aware** - Season of Discovery and TBC Anniversary are supported with the Classic catalog as the baseline; season-specific spell data is still being added.
+* **Season aware** - TBC Anniversary has its own spell data: reworked cooldowns, TBC-only spells and the new ranks. Season of Discovery is supported with the Classic catalog as the baseline; rune-specific spell data is still being added.
 * **Configuration profiles** with export/import for moving a setup between characters or sharing it.
 * **Update notice** - a one-time chat message when a party, raid or guild member runs a newer version of CooldownWatch.
 
@@ -127,7 +127,7 @@ Profiles can be shared as portable strings, making it easy to copy a setup betwe
 
 #### Does CooldownWatch work on TBC Anniversary?
 
-Yes - the addon loads and tracks with the Classic spell catalog as its baseline. Cooldowns that TBC reworked and spell ranks that are new in TBC are not covered yet; TBC-specific data is still being added. A cooldown you miss on TBC is exactly what the **Spell Data Report** issue template is for.
+Yes - TBC Anniversary uses its own spell data: cooldowns that TBC changed (such as Blind, Fear Ward or Spell Lock), spells that only exist in TBC (such as Icy Veins and Bloodlust/Heroism) and the new TBC ranks. A cooldown you miss or that counts down wrong on TBC is exactly what the **Spell Data Report** issue template is for.
 
 #### A cooldown counts down with the wrong duration. What now?
 
