@@ -63,7 +63,7 @@ Upload it by hand in the gallery section of each dashboard.
 ![](cooldownwatch_target_cooldown_bar.png)
 
 ```
-Everything your current target has burned, and how long until it is back. CooldownWatch reads the combat log, so nothing is required on the enemy's side - switch targets and the bar follows.
+Everything your current target has burned, and how long until it is back. Tracked straight from the combat log with nothing to set up - switch targets and the bar follows.
 ```
 
 **File:** `cooldownwatch_target_cooldown_bar.png`
@@ -123,7 +123,7 @@ Watch your own side too: opt-in tracking shows teammate cooldowns on the target 
 ![](cooldownwatch_profile_configuration.png)
 
 ```
-Save your setup as named profiles and switch between them, or hand one to another character - or another player - as an export string. The Default profile is always there to reset to.
+Keep separate setups as named profiles and switch between them - your changes stay with the profile they belong to. Hand one to another character, or another player, as an export string, or reset to defaults at any time.
 ```
 
 **File:** `cooldownwatch_profile_configuration.png`
