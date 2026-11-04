@@ -1,17 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "github>RagedUnicorn/renovate-config:base"
   ],
-  "timezone": "Europe/Zurich",
-  "schedule": [
-    "on monday"
-  ],
-  "labels": [
-    "dependencies",
-    "renovate"
-  ],
-  "commitMessagePrefix": "chore(deps):",
   "packageRules": [
     {
       "description": "Group all GitHub Actions updates",
